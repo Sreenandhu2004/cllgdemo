@@ -1,0 +1,24 @@
+#include<stdio.h>
+int countodd(int n);
+int main(){
+    int count,n;
+    printf("enter the no.of terms:");
+    scanf("%d",&n);
+    int i=1;
+    do{
+        printf("%d ",i);
+        i++;
+    }while(i<=n);
+    count=countodd(n);
+    printf("\nno.of odd numbers:%d",count);
+}
+int countodd(int n){
+    int i=1,count=0;
+    do{
+        if((i%2)!=0){
+            count++;
+        }
+        i++;
+    }while(i<=n);
+    return count;
+}

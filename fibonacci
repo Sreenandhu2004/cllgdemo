@@ -1,0 +1,15 @@
+//FIBONACCI SERIES
+#include<stdio.h>
+int main(){
+    int n,nxtterm,t1,t2,i;
+    printf("enter the no.of terms for the fibonacci series");
+    scanf("%d",&n);
+    t1=0;
+    t2=1;
+    for(i=1;i<=n;i++){
+        printf("%d  ",t1);
+        nxtterm=t1+t2;
+        t1=t2;
+        t2=nxtterm;
+    }
+}

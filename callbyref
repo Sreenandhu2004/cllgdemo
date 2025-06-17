@@ -1,0 +1,16 @@
+//CALL BY REFERENCE::both actual nd formal parameters refers to same memory locatn
+//any changes made to the formal parameters reflects to actual parameters
+
+#include<stdio.h>
+int fun(int *ptr1,int *ptr2);  //note the declaration
+int main(){
+    int x=10,y=20;
+    fun(&x,&y);                //address is also sent
+    printf("x=%d nd y=%d",x,y);
+}
+int fun(int *ptr1, int *ptr2)
+{    
+    ptr1=20;                    //pointers only store addresses nd to get the value out of it just put ''
+    *ptr2=10;
+}
+

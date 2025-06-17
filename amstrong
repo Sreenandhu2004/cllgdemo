@@ -1,0 +1,33 @@
+//ARMSTRONG NUMBER::abcd=a^4+b^4+c^4+d^4
+
+#include<stdio.h>
+int main(){
+    int num,q,count,cnt,mul,result,rem;
+    printf("enter a num::");
+    scanf("%d",&num);
+    q=num;
+    count=0;
+    while(q!=0){  //to find no.of digits
+        q=q/10;
+        count++;
+    }
+    q=num;
+    cnt=count,mul=1,result=0;
+    while(q!=0){
+          rem=q%10;
+        while(cnt!=0){  //multiplying each no. nd times
+            mul=mul*rem;
+            cnt--;
+        }
+        result=result+mul;
+        mul=1;
+        cnt=count;
+        q=q/10;
+    }
+    if(result==num){
+        printf("entered num is an armstrong num");
+    }
+    else{
+        printf("entered num is not an armstrong num");
+    }
+}

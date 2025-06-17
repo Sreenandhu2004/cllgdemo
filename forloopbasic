@@ -1,0 +1,11 @@
+//FORLOOP Basic
+
+#include<stdio.h>
+int main(){
+    int i,j;
+    printf("the first 10 even no. are::\n");
+    for(i=1,j=2;i<=10;i++){
+        printf("%d\n",j);
+        j=j+2;
+    }
+}

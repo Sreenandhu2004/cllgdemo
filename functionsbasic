@@ -1,0 +1,18 @@
+//FUNCTIONS
+/* syntax: returntype  functionname   (set of inputs with datatype)';'
+functn declaration=>function definition=>function call */
+
+#include<stdio.h>
+int areaofrect(int l,int b) //declaratn
+{
+    int area;
+    area=l*b;     //definition
+    return area;
+}
+int main(){
+    int l,b,area;
+    printf("enter the l nd b:");
+    scanf("%d%d",&l,&b);
+    area=areaofrect(l,b); //call nd no need of returntype
+    printf("\nThe area is %d",area);
+}

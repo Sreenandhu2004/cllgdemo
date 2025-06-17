@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main(){
+    int a,b,n;
+    printf("enter 1:add,2:sub,3:mul,4:div,5:remcal,6:largest among 2::");
+    scanf("%d",&n);
+    printf("enter 2 numbers:");
+    scanf("%d%d",&a,&b);
+    switch(n){
+        case 1: printf("result:%d",a+b);
+                break;
+        case 2: printf("result:%d",a-b);
+                break;
+        case 3:printf("result:%d",a*b);
+               break;
+        case 4:printf("result:%d",a/b);
+               break;
+        case 5:printf("result:%d",a%b);
+               break;
+        case 6:if(a>b){
+               printf("largest:%d",a);
+               break;}
+               else{
+               printf("largest:%d",b);
+               break;
+             }
+        
+    }
+}

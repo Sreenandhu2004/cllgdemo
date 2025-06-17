@@ -1,0 +1,11 @@
+#include<stdio.h>
+void add_one(int *ptr);
+int main(){
+    int *ptr,i=100;
+    ptr=&i;
+    add_one(ptr);
+    printf("i=%d",i);
+}
+void add_one(int *ptr){
+    (*ptr)++;
+}

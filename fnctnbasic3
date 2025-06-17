@@ -1,0 +1,12 @@
+//Functionbasic3
+
+#include<stdio.h>
+int add(int,int);
+int main(){
+    int a=30,b=20,sum;
+    sum=add(a,b);  //here a nd b are actual parameters which are passed to the functn
+    printf("%d",sum);
+}
+int add(int m,int n){
+    return(m+n);   //m nd n are formal parameters which are received by a functn
+}

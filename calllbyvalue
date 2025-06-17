@@ -1,0 +1,14 @@
+//CALL BY VALUE::actual parameters copied to formal parameters in diff locatns
+//any changes done in declared functn wont show up in main functn
+
+#include<stdio.h>
+int fun(int,int); //declaratn
+int main(){
+    int x=10,y=20;
+    fun(x,y);   //call nd no need of any datatype here
+    printf("x=%d nd y=%d",x,y);
+}
+int fun(int x,int y){
+    x=20;              //def
+    y=10;
+}

@@ -1,0 +1,9 @@
+//ASCII value of charecters
+
+#include<stdio.h>
+int main(){
+    char ch;
+    printf("enter a charecter");
+    scanf("%c",&ch);//for first tym scanf using for char no need of getch nd putch
+    printf("\nThe ascii value of %c is %d",ch,ch);
+}

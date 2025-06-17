@@ -1,0 +1,12 @@
+//Functn basic2
+
+#include<stdio.h>
+char fun();  //declaratn
+int main(){
+    char c;
+    c=fun();    //call nd no need of returntype
+    printf("charecter is %c",c);
+}
+char fun(){
+    return 'a';   //charecter should be written in ''
+}                 
