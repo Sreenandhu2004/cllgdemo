@@ -1,4 +1,2 @@
-# cllgdemo
-hi
-<br>
-this is my intenrship day
+# All the c codes I have written
+
